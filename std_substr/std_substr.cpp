@@ -9,8 +9,7 @@ std::string strSlicer(std::string incoming, int begin, int end) {
 	}
 	
 	catch (std::out_of_range const& ex) { 
-		std::cout << ex.what() << " ";
-		return "invalid";
+		return ex.what();
 	}
 }
 
